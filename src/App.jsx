@@ -60,9 +60,9 @@ function Hero() {
       <div className="hero__grid-overlay" aria-hidden="true" />
       <div className="container hero__inner">
         <h1 className="hero__title">
-          Construimos software
+          Una compañía de venture
           <br />
-          con <span className="gradient-text">cuidado</span>.
+          software <span className="gradient-text">boutique</span>.
         </h1>
         <p className="hero__lead">
           Hard Fork es un estudio de software. Diseñamos y construimos productos
