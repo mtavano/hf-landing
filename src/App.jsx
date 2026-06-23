@@ -60,16 +60,15 @@ function Hero() {
       <div className="hero__grid-overlay" aria-hidden="true" />
       <div className="container hero__inner">
         <h1 className="hero__title">
-          Construimos software serio
+          Construimos software
           <br />
-          para problemas <span className="gradient-text">reales</span>.
+          con <span className="gradient-text">cuidado</span>.
         </h1>
         <p className="hero__lead">
-          Hard Fork es una compañía de software. Diseñamos y desarrollamos
-          productos digitales con estándares de ingeniería altos y usamos
-          inteligencia artificial donde aporta valor concreto, no como adorno.
-          Trabajamos a la par con quienes emprenden para llevar una idea desde el
-          primer boceto hasta un producto en producción.
+          Hard Fork es un estudio de software. Diseñamos y construimos productos
+          digitales con atención al detalle, y usamos inteligencia artificial
+          cuando de verdad mejora el resultado. Acompañamos cada proyecto desde
+          la primera idea hasta que está funcionando.
         </p>
         <div className="hero__actions">
           <a href="#contact" className="btn btn-primary">
@@ -88,10 +87,10 @@ function Hero() {
 }
 
 const stats = [
-  { value: 'Calidad', label: 'Estándares de ingeniería altos en cada proyecto' },
-  { value: '0 → 1', label: 'Acompañamos productos desde la idea hasta el lanzamiento' },
+  { value: 'Cuidado', label: 'Atención al detalle en cada proyecto' },
+  { value: '0 → 1', label: 'De la primera idea al lanzamiento, contigo' },
   { value: 'Full-stack', label: 'Diseño, ingeniería, datos e infraestructura' },
-  { value: 'IA aplicada', label: 'Inteligencia artificial donde mejora el producto' },
+  { value: 'IA', label: 'La usamos solo cuando mejora el producto' },
 ]
 
 function Stats() {
@@ -128,7 +127,7 @@ const crafts = [
   {
     icon: 'heart',
     title: 'Diseño centrado en las personas',
-    body: 'Partimos de las personas que van a usar el producto. Buscamos que entreguen claridad y tiempo a quien los usa, no más ruido.',
+    body: 'Partimos de quien va a usar el producto. Que le dé claridad y le ahorre tiempo, no que le agregue ruido.',
   },
 ]
 
@@ -183,14 +182,14 @@ function Craft() {
         <div className="section-head">
           <span className="eyebrow">Qué hacemos</span>
           <h2 className="section-title">
-            Productos bien hechos,
+            Pocas cosas,
             <br />
-            con la IA en su justo lugar.
+            bien hechas.
           </h2>
           <p className="section-lead">
-            Construir software hoy es más rápido que nunca. Nosotros nos
-            enfocamos en que además quede bien hecho: usamos las herramientas de
-            IA disponibles sin bajar la vara en correctitud ni en mantenibilidad.
+            Hoy construir software es más rápido que nunca. Nos importa que
+            además quede bien hecho: usamos IA sin soltar el detalle en lo que
+            de verdad importa.
           </p>
         </div>
         <div className="cards">
@@ -235,12 +234,12 @@ function Approach() {
         <div className="approach__intro">
           <span className="eyebrow eyebrow--light">Cómo trabajamos</span>
           <h2 className="section-title approach__title">
-            La calidad no se negocia.
+            Calidad sin atajos.
           </h2>
           <p className="approach__lead">
-            Es fácil priorizar velocidad por sobre todo lo demás. Nosotros
-            buscamos el equilibrio: la IA nos permite avanzar rápido y, al mismo
-            tiempo, sostener un estándar alto en cada decisión técnica.
+            Es fácil dejar que la velocidad se lo lleve todo por delante.
+            Preferimos el equilibrio: la IA nos deja avanzar rápido sin soltar
+            el detalle en cada decisión técnica.
           </p>
         </div>
         <div className="approach__list">
@@ -271,10 +270,9 @@ function Ventures() {
             y el negocio alrededor.
           </h2>
           <p className="section-lead">
-            Funcionamos como un venture studio: identificamos problemas sin
-            resolver, construimos el producto que los aborda y hacemos crecer el
-            negocio en torno a él. El software es la herramienta; crear valor es
-            el objetivo.
+            Funcionamos como un venture studio: buscamos problemas sin resolver,
+            construimos el producto que los aborda y hacemos crecer el negocio a
+            su alrededor. El software es la herramienta, no el fin.
           </p>
           <ul className="ventures__points">
             <li>
@@ -365,13 +363,13 @@ function CTA() {
       <div className="cta__mesh" aria-hidden="true" />
       <div className="container cta__inner">
         <h2 className="cta__title">
-          Construyamos juntos
+          Hablemos de
           <br />
           tu próximo producto.
         </h2>
         <p className="cta__lead">
-          Ya sea que estés lanzando algo nuevo o mejorando un producto existente,
-          nos gustaría conversar contigo.
+          Estés empezando algo nuevo o mejorando algo que ya existe, nos
+          gustaría conversar.
         </p>
         <div className="cta__actions">
           <a href="mailto:main@hardfork.cl" className="btn btn-primary">
