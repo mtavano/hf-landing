@@ -31,6 +31,17 @@
   --text-on-dark-muted: #a7a7ba;
 
   --grad-purple: linear-gradient(120deg, #9b86ff 0%, #7c5cff 45%, #4f24d0 100%);
+  /* Stripe-style flowing gradient band — deep indigo/violet, low-neon */
+  --grad-flow: linear-gradient(
+    115deg,
+    #160d3a 0%,
+    #2c1a72 22%,
+    #3d2399 40%,
+    #4a2bb0 56%,
+    #44309e 70%,
+    #2a1c70 84%,
+    #160d3a 100%
+  );
   --grad-mesh: radial-gradient(
       60% 80% at 15% 10%,
       rgba(124, 92, 255, 0.55) 0%,
@@ -68,6 +79,7 @@ body {
   background: var(--white);
   color: var(--text);
   line-height: 1.6;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 

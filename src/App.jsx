@@ -31,21 +31,21 @@ function Nav() {
   return (
     <header className={`nav ${scrolled ? 'nav--scrolled' : ''}`}>
       <div className="container nav__inner">
-        <a href="#top" aria-label="Hard Fork home">
+        <a href="#top" aria-label="Inicio Hard Fork">
           <Logo size={28} />
         </a>
-        <nav className="nav__links" aria-label="Primary">
-          <a href="#craft">Craft</a>
-          <a href="#approach">Approach</a>
+        <nav className="nav__links" aria-label="Principal">
+          <a href="#craft">Qué hacemos</a>
+          <a href="#approach">Cómo trabajamos</a>
           <a href="#ventures">Ventures</a>
-          <a href="#human">Human impact</a>
+          <a href="#human">Personas</a>
         </nav>
         <div className="nav__cta">
           <a href="mailto:main@hardfork.cl" className="nav__signin">
-            Contact
+            Contacto
           </a>
           <a href="#contact" className="btn btn-primary">
-            Start a venture <Arrow />
+            Conversemos <Arrow />
           </a>
         </div>
       </div>
@@ -56,35 +56,31 @@ function Nav() {
 function Hero() {
   return (
     <section className="hero" id="top">
-      <div className="hero__mesh" aria-hidden="true" />
+      <div className="hero__gradient" aria-hidden="true" />
       <div className="hero__grid-overlay" aria-hidden="true" />
       <div className="container hero__inner">
-        <span className="hero__badge">
-          <span className="hero__badge-dot" />
-          Venture Software Company
-        </span>
         <h1 className="hero__title">
-          The software of the future,
+          Construimos software serio
           <br />
-          built to a <span className="gradient-text">pre-automation</span> standard.
+          para problemas <span className="gradient-text">reales</span>.
         </h1>
         <p className="hero__lead">
-          Hard Fork is a venture software company. We design and engineer
-          AI-native products with the craftsmanship of an earlier era — when
-          software was built to last, line by line. High impact, uncompromising
-          quality, and a relentless focus on discovering new businesses while
-          keeping the human at the center.
+          Hard Fork es una compañía de software. Diseñamos y desarrollamos
+          productos digitales con estándares de ingeniería altos y usamos
+          inteligencia artificial donde aporta valor concreto, no como adorno.
+          Trabajamos a la par con quienes emprenden para llevar una idea desde el
+          primer boceto hasta un producto en producción.
         </p>
         <div className="hero__actions">
           <a href="#contact" className="btn btn-primary">
-            Build with us <Arrow />
+            Trabajemos juntos <Arrow />
           </a>
           <a href="#craft" className="btn btn-ghost-dark">
-            How we work
+            Cómo trabajamos
           </a>
         </div>
         <div className="hero__proof">
-          <span>Crafted in Chile · operating worldwide</span>
+          <span>De la idea al producto en producción</span>
         </div>
       </div>
     </section>
@@ -92,10 +88,10 @@ function Hero() {
 }
 
 const stats = [
-  { value: 'AI-native', label: 'Built on frontier models, end to end' },
-  { value: '100%', label: 'Engineered to pre-automation quality bars' },
-  { value: '0→1', label: 'We discover and launch new businesses' },
-  { value: 'Human-first', label: 'Technology that serves people, not the inverse' },
+  { value: 'Calidad', label: 'Estándares de ingeniería altos en cada proyecto' },
+  { value: '0 → 1', label: 'Acompañamos productos desde la idea hasta el lanzamiento' },
+  { value: 'Full-stack', label: 'Diseño, ingeniería, datos e infraestructura' },
+  { value: 'IA aplicada', label: 'Inteligencia artificial donde mejora el producto' },
 ]
 
 function Stats() {
@@ -116,23 +112,23 @@ function Stats() {
 const crafts = [
   {
     icon: 'spark',
-    title: 'AI-native product engineering',
-    body: 'We architect products where intelligence is a first-class material — agents, reasoning, and automation woven into the core, not bolted on afterward.',
+    title: 'Ingeniería de producto',
+    body: 'Diseñamos y construimos productos completos, desde la base de datos hasta la interfaz. Cuando tiene sentido, integramos modelos de IA y automatización en el núcleo del producto.',
   },
   {
     icon: 'shield',
-    title: 'Pre-automation quality standards',
-    body: 'Every system is held to the discipline of hand-built software: rigorous architecture, real test coverage, observability, and security by default.',
+    title: 'Calidad de ingeniería',
+    body: 'Arquitectura clara, pruebas reales, observabilidad y seguridad desde el primer día. Escribimos código pensando en quien lo va a mantener dentro de varios años.',
   },
   {
     icon: 'compass',
-    title: 'Venture discovery',
-    body: 'We do not just ship features — we find the business. We validate markets, build the company around the product, and take ideas from zero to one.',
+    title: 'Desarrollo de ventures',
+    body: 'No nos quedamos en la entrega de features. Validamos el problema, construimos el producto y ayudamos a levantar el negocio alrededor de él.',
   },
   {
     icon: 'heart',
-    title: 'Human-centered design',
-    body: 'Impact is measured in lives improved. We build technology that gives people clarity, time, and control — never noise.',
+    title: 'Diseño centrado en las personas',
+    body: 'Partimos de las personas que van a usar el producto. Buscamos que entreguen claridad y tiempo a quien los usa, no más ruido.',
   },
 ]
 
@@ -185,16 +181,16 @@ function Craft() {
     <section className="section" id="craft">
       <div className="container">
         <div className="section-head">
-          <span className="eyebrow">What we build</span>
+          <span className="eyebrow">Qué hacemos</span>
           <h2 className="section-title">
-            Software with the soul of craft,
+            Productos bien hechos,
             <br />
-            the power of AI.
+            con la IA en su justo lugar.
           </h2>
           <p className="section-lead">
-            Automation made software cheap. We make it exceptional. Hard Fork
-            unites frontier intelligence with engineering standards from before
-            the shortcut era.
+            Construir software hoy es más rápido que nunca. Nosotros nos
+            enfocamos en que además quede bien hecho: usamos las herramientas de
+            IA disponibles sin bajar la vara en correctitud ni en mantenibilidad.
           </p>
         </div>
         <div className="cards">
@@ -216,18 +212,18 @@ function Craft() {
 const principles = [
   {
     n: '01',
-    title: 'Engineering as craft',
-    body: 'We write software that we would be proud to maintain in a decade. Clear architecture, deliberate trade-offs, and code that reads like prose.',
+    title: 'Código mantenible',
+    body: 'Escribimos código claro y bien estructurado, con decisiones documentadas y pruebas. Pensado para que el equipo lo pueda mantener y hacer crecer sin sorpresas.',
   },
   {
     n: '02',
-    title: 'AI as a force multiplier',
-    body: 'We use the most capable models available to design, build, and reason — accelerating delivery without ever lowering the bar for correctness.',
+    title: 'IA con criterio',
+    body: 'Usamos modelos de IA para acelerar el desarrollo, pero cada resultado pasa por revisión humana. La herramienta ayuda; las decisiones técnicas las tomamos nosotros.',
   },
   {
     n: '03',
-    title: 'Outcomes over output',
-    body: 'A shipped feature is not the goal. A working business that improves real lives is. We instrument everything against that truth.',
+    title: 'Enfocados en resultados',
+    body: 'Entregar una funcionalidad no es el objetivo final. Lo es un producto que funciona en producción y resuelve el problema. Medimos contra eso.',
   },
 ]
 
@@ -237,16 +233,14 @@ function Approach() {
       <div className="approach__mesh" aria-hidden="true" />
       <div className="container approach__inner">
         <div className="approach__intro">
-          <span className="eyebrow eyebrow--light">Our standard</span>
+          <span className="eyebrow eyebrow--light">Cómo trabajamos</span>
           <h2 className="section-title approach__title">
-            Quality is not negotiable.
-            <br />
-            It is the entire point.
+            La calidad no se negocia.
           </h2>
           <p className="approach__lead">
-            The automation era traded craftsmanship for speed. We refuse the
-            trade. At Hard Fork, AI lets us move faster <em>and</em> build
-            better — the way the best software was always meant to be made.
+            Es fácil priorizar velocidad por sobre todo lo demás. Nosotros
+            buscamos el equilibrio: la IA nos permite avanzar rápido y, al mismo
+            tiempo, sostener un estándar alto en cada decisión técnica.
           </p>
         </div>
         <div className="approach__list">
@@ -272,46 +266,73 @@ function Ventures() {
         <div className="ventures__copy">
           <span className="eyebrow">Venture studio</span>
           <h2 className="section-title">
-            We don't just write code.
+            Construimos el producto
             <br />
-            We discover companies.
+            y el negocio alrededor.
           </h2>
           <p className="section-lead">
-            Hard Fork operates as a venture software company: we identify
-            unsolved problems, build the product that solves them, and grow the
-            business around it. Software is our instrument — value creation is
-            our craft.
+            Funcionamos como un venture studio: identificamos problemas sin
+            resolver, construimos el producto que los aborda y hacemos crecer el
+            negocio en torno a él. El software es la herramienta; crear valor es
+            el objetivo.
           </p>
           <ul className="ventures__points">
             <li>
               <span className="ventures__check" />
-              Idea validation grounded in real markets and real users
+              Validación de la idea con mercado y usuarios reales
             </li>
             <li>
               <span className="ventures__check" />
-              Full-stack engineering — from data and AI to product and growth
+              Ingeniería completa: datos, IA, producto y crecimiento
             </li>
             <li>
               <span className="ventures__check" />
-              Built to scale: security, observability, and reliability from day
-              one
+              Pensado para escalar: seguridad, observabilidad y confiabilidad
+              desde el inicio
             </li>
           </ul>
           <a href="#contact" className="btn btn-primary ventures__cta">
-            Explore a venture with us <Arrow />
+            Conversemos sobre tu proyecto <Arrow />
           </a>
         </div>
         <div className="ventures__visual" aria-hidden="true">
-          <div className="orbit">
-            <div className="orbit__core">
-              <Logo size={34} />
+          <div className="panel">
+            <div className="panel__bar">
+              <span className="panel__dot" />
+              <span className="panel__dot" />
+              <span className="panel__dot" />
             </div>
-            <span className="orbit__chip orbit__chip--1">Fintech</span>
-            <span className="orbit__chip orbit__chip--2">AI agents</span>
-            <span className="orbit__chip orbit__chip--3">Data</span>
-            <span className="orbit__chip orbit__chip--4">Open banking</span>
-            <span className="orbit__ring orbit__ring--a" />
-            <span className="orbit__ring orbit__ring--b" />
+            <div className="panel__body">
+              <div className="panel__chart">
+                {[42, 58, 49, 71, 63, 86, 74, 92].map((h, i) => (
+                  <span
+                    className="panel__col"
+                    key={i}
+                    style={{ height: `${h}%` }}
+                  />
+                ))}
+              </div>
+              <div className="panel__rows">
+                <div className="panel__row">
+                  <span className="panel__row-name">Fintech</span>
+                  <span className="panel__row-track">
+                    <span style={{ width: '82%' }} />
+                  </span>
+                </div>
+                <div className="panel__row">
+                  <span className="panel__row-name">Datos</span>
+                  <span className="panel__row-track">
+                    <span style={{ width: '64%' }} />
+                  </span>
+                </div>
+                <div className="panel__row">
+                  <span className="panel__row-name">Agentes de IA</span>
+                  <span className="panel__row-track">
+                    <span style={{ width: '48%' }} />
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -323,16 +344,15 @@ function Human() {
   return (
     <section className="human" id="human">
       <div className="container human__inner">
-        <span className="eyebrow">Why we build</span>
+        <span className="eyebrow">Por qué lo hacemos</span>
         <h2 className="human__title">
-          Every line of software we write exists to{' '}
-          <span className="gradient-text">serve a human being.</span>
+          Construimos pensando en{' '}
+          <span className="gradient-text">quien usa el producto.</span>
         </h2>
         <p className="human__lead">
-          Technology is only worth building if it gives people something back —
-          time, clarity, opportunity, dignity. We measure our work not by what
-          it automates, but by the lives it makes better. That is the center of
-          gravity for everything Hard Fork creates.
+          Un buen producto le ahorra tiempo y le simplifica el día a quien lo
+          usa. Esa es la vara con la que medimos nuestro trabajo, antes que
+          cualquier métrica interna.
         </p>
       </div>
     </section>
@@ -345,13 +365,13 @@ function CTA() {
       <div className="cta__mesh" aria-hidden="true" />
       <div className="container cta__inner">
         <h2 className="cta__title">
-          Let's build the software
+          Construyamos juntos
           <br />
-          the future deserves.
+          tu próximo producto.
         </h2>
         <p className="cta__lead">
-          Whether you're launching a new venture or raising the bar on an
-          existing one, we'd like to hear from you.
+          Ya sea que estés lanzando algo nuevo o mejorando un producto existente,
+          nos gustaría conversar contigo.
         </p>
         <div className="cta__actions">
           <a href="mailto:main@hardfork.cl" className="btn btn-primary">
@@ -368,26 +388,22 @@ function Footer() {
     <footer className="footer">
       <div className="container footer__inner">
         <div className="footer__brand">
-          <Logo size={26} />
-          <p className="footer__tagline">
-            A venture software company building the future with
-            pre-automation craftsmanship.
-          </p>
+          <Logo size={26} light />
         </div>
         <div className="footer__cols">
           <div className="footer__col">
-            <h4>Company</h4>
-            <a href="#craft">What we build</a>
-            <a href="#approach">Our standard</a>
+            <h4>Compañía</h4>
+            <a href="#craft">Qué hacemos</a>
+            <a href="#approach">Cómo trabajamos</a>
             <a href="#ventures">Ventures</a>
-            <a href="#human">Human impact</a>
+            <a href="#human">Personas</a>
           </div>
           <div className="footer__col">
-            <h4>Contact</h4>
+            <h4>Contacto</h4>
             <a href="mailto:main@hardfork.cl">main@hardfork.cl</a>
           </div>
           <div className="footer__col footer__col--legal">
-            <h4>Legal entity</h4>
+            <h4>Razón social</h4>
             <span>Hard Fork SpA</span>
             <span>Av. Apoquindo 6410, Of. 1004</span>
             <span>Las Condes, Santiago, Chile</span>
@@ -396,7 +412,8 @@ function Footer() {
       </div>
       <div className="container footer__bottom">
         <span>
-          © {new Date().getFullYear()} Hard Fork SpA. All rights reserved.
+          © {new Date().getFullYear()} Hard Fork SpA. Todos los derechos
+          reservados.
         </span>
         <span>Santiago · Chile</span>
       </div>
